@@ -1,0 +1,23 @@
+{
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "request": "launch",
+      "name": "debug wasm",
+      "type": "pwa-node",
+      "program": "${workspaceFolder}/demo.ts",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "deno",
+      "args": ["--dev"],
+      "runtimeArgs": [
+        "run",
+        "--inspect",
+        "--inspect-brk",
+        "-A"
+      ],
+      "smartStep": false,
+      "attachSimplePort": 9229
+    }
+  ]
+}
